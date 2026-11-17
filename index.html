@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Abhilasha Gavane, MCA student and software developer building AI-powered applications and full-stack software.">
+  <title>Abhilasha Gavane | Software Developer</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#121a2e; --text:#eef2ff; --muted:#aab5ce; --accent:#8b9cff; --line:#29334d; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:linear-gradient(180deg,#0b1020,#10172a 55%,#0b1020); color:var(--text); line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    a:hover { color:var(--accent); }
+    .wrap { width:min(1060px,92%); margin:auto; }
+    header { padding:22px 0; border-bottom:1px solid var(--line); position:sticky; top:0; background:rgba(11,16,32,.9); backdrop-filter:blur(12px); z-index:2; }
+    nav { display:flex; align-items:center; justify-content:space-between; gap:18px; }
+    .brand { font-weight:800; letter-spacing:.2px; }
+    .navlinks { display:flex; gap:20px; flex-wrap:wrap; font-size:.94rem; color:var(--muted); }
+    .hero { padding:82px 0 60px; display:grid; grid-template-columns:1.5fr .8fr; gap:38px; align-items:center; }
+    .eyebrow { color:var(--accent); font-weight:700; text-transform:uppercase; letter-spacing:2px; font-size:.78rem; }
+    h1 { font-size:clamp(2.5rem,6vw,4.6rem); line-height:1.04; margin:14px 0 18px; letter-spacing:-2px; }
+    h1 span { color:var(--accent); }
+    .lead { color:var(--muted); max-width:650px; font-size:1.08rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:26px; }
+    .btn { display:inline-block; padding:11px 17px; border-radius:12px; border:1px solid var(--line); font-weight:700; }
+    .btn.primary { background:var(--accent); color:#0b1020; border-color:var(--accent); }
+    .profile-card, .card, .skillbox { background:rgba(18,26,46,.88); border:1px solid var(--line); border-radius:18px; padding:23px; }
+    .profile-card .initials { display:grid; place-items:center; width:92px; height:92px; border-radius:24px; background:linear-gradient(135deg,#8b9cff,#c3a7ff); color:#0b1020; font-size:2rem; font-weight:900; margin-bottom:18px; }
+    .profile-card p { color:var(--muted); margin:.4rem 0; }
+    section { padding:38px 0; }
+    .section-head { margin-bottom:22px; }
+    h2 { font-size:1.8rem; margin:0 0 7px; letter-spacing:-.5px; }
+    .section-head p, .muted { color:var(--muted); margin:0; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .card { display:flex; flex-direction:column; gap:10px; }
+    .card h3 { margin:0; font-size:1.12rem; }
+    .card p { color:var(--muted); margin:0; }
+    .tags { display:flex; flex-wrap:wrap; gap:7px; margin-top:3px; }
+    .tag { padding:4px 9px; border:1px solid var(--line); border-radius:999px; color:#d5dcf1; font-size:.8rem; }
+    .card-links { display:flex; gap:14px; margin-top:auto; padding-top:9px; color:var(--accent); font-weight:700; font-size:.92rem; }
+    .skills { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+    .skillbox h3 { font-size:1rem; margin:0 0 8px; }
+    .skillbox p { color:var(--muted); margin:0; font-size:.94rem; }
+    .edu { display:flex; justify-content:space-between; gap:18px; padding:15px 0; border-bottom:1px solid var(--line); }
+    .edu:last-child { border-bottom:0; }
+    .edu strong { display:block; }
+    .edu small { color:var(--muted); }
+    .date { color:var(--muted); white-space:nowrap; }
+    .contact { background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:25px; display:flex; justify-content:space-between; align-items:center; gap:22px; flex-wrap:wrap; }
+    footer { padding:28px 0 38px; text-align:center; color:var(--muted); font-size:.88rem; }
+    @media (max-width:720px) { .hero { grid-template-columns:1fr; padding-top:54px; } .grid,.skills { grid-template-columns:1fr; } .navlinks { gap:12px; } .edu { flex-direction:column; gap:2px; } .date { white-space:normal; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#home">Abhilasha Gavane</a>
+      <div class="navlinks">
+        <a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="home">
+      <div>
+        <div class="eyebrow">MCA Student · Software Developer</div>
+        <h1>Building useful software with <span>AI</span>.</h1>
+        <p class="lead">I’m an MCA student and software developer interested in AI-powered applications, LLM API integration, backend development, and full-stack products. I enjoy turning practical problems into working software and learning technologies by building.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore my projects</a>
+          <a class="btn" href="https://github.com/abhi-lasha7" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+          <a class="btn" href="mailto:abhilashagavhane2@gmail.com">Contact me</a>
+        </div>
+      </div>
+      <aside class="profile-card">
+        <div class="initials">AG</div>
+        <h2 style="font-size:1.35rem;margin-bottom:4px">Abhilasha Gavane</h2>
+        <p>Mumbai, Maharashtra, India</p>
+        <p>MCA · Sardar Patel Institute of Technology</p>
+        <p><a href="https://www.linkedin.com/in/abhilasha-gavane05" target="_blank" rel="noreferrer">LinkedIn ↗</a></p>
+        <p><a href="https://github.com/abhi-lasha7" target="_blank" rel="noreferrer">GitHub ↗</a></p>
+      </aside>
+    </section>
+
+    <section id="projects">
+      <div class="section-head"><h2>Featured Projects</h2><p>A selection of AI and full-stack applications.</p></div>
+      <div class="grid">
+        <article class="card">
+          <h3>AI Resume Analyzer &amp; Job Application Platform</h3>
+          <p>An AI-powered career platform for resume parsing, ATS compatibility analysis, skill-gap identification, personalized recommendations, and LLM-generated cover letters and interview preparation content.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Groq LLM API</span><span class="tag">JWT</span></div>
+          <div class="card-links"><a href="https://github.com/abhi-lasha7/ai-resume-platform/" target="_blank" rel="noreferrer">View repository ↗</a></div>
+        </article>
+        <article class="card">
+          <h3>AI Interview Preparation Platform</h3>
+          <p>An interview practice application with AI-powered evaluation, voice-based practice, resume management, personalized feedback, and interview replay.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Groq AI</span><span class="tag">Web Speech API</span></div>
+          <div class="card-links"><a href="https://github.com/abhi-lasha7/ai-interview-prep/" target="_blank" rel="noreferrer">View repository ↗</a></div>
+        </article>
+        <article class="card">
+          <h3>Expense Tracker</h3>
+          <p>A full-stack personal finance application for managing income and expenses, with monthly summaries, secure authentication, per-user data isolation, and REST APIs.</p>
+          <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Spring Security</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">React</span></div>
+          <div class="card-links"><a href="https://github.com/abhi-lasha7/expense-tracker/" target="_blank" rel="noreferrer">View repository ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-head"><h2>Technical Skills</h2><p>Technologies I have worked with or studied.</p></div>
+      <div class="skills">
+        <div class="skillbox"><h3>Languages</h3><p>Java · Python · JavaScript · SQL</p></div>
+        <div class="skillbox"><h3>AI &amp; LLMs</h3><p>Groq API integration · Prompt engineering · RAG fundamentals</p></div>
+        <div class="skillbox"><h3>Backend</h3><p>Node.js · Spring Boot · Hibernate · REST APIs</p></div>
+        <div class="skillbox"><h3>Databases</h3><p>PostgreSQL · MySQL · MongoDB</p></div>
+        <div class="skillbox"><h3>Frontend</h3><p>React.js · HTML · CSS</p></div>
+        <div class="skillbox"><h3>Tools</h3><p>Git · GitHub · Postman · VS Code · Docker</p></div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-head"><h2>Education</h2></div>
+      <div class="skillbox">
+        <div class="edu"><div><strong>Master of Computer Applications</strong><small>Sardar Patel Institute of Technology, Mumbai</small><br><small>CGPA: 8.0</small></div><div class="date">2025–2027</div></div>
+        <div class="edu"><div><strong>Bachelor of Computer Applications</strong><small>Shivaji Mahavidyalaya, Udgir</small><br><small>CGPA: 8.72</small></div><div class="date">2022–2025</div></div>
+        <div class="edu"><div><strong>Higher Secondary Certificate · Science</strong><small>Vidyavardhini Junior College</small><br><small>89.67%</small></div><div class="date">2020–2021</div></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <div><h2>Let’s connect</h2><p class="muted">Open to software engineering and AI-focused opportunities.</p></div>
+        <div class="actions" style="margin:0">
+          <a class="btn primary" href="mailto:abhilashagavhane2@gmail.com">Email me</a>
+          <a class="btn" href="https://www.linkedin.com/in/abhilasha-gavane05" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a class="btn" href="https://github.com/abhi-lasha7" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">© 2026 Abhilasha Gavane · Built with HTML and CSS</div></footer>
+</body>
+</html>
